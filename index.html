@@ -269,15 +269,20 @@
   /* ---------- 全ラインナップ ---------- */
   .more-group{margin-top:clamp(28px,4vw,44px)}
   .more-group:first-of-type{margin-top:0}
-  .more-group h3{font-weight:900;font-size:1.02rem;margin-bottom:.7em;padding-bottom:.4em;border-bottom:2px solid var(--ink)}
-  .more-table{width:100%;border-collapse:collapse;font-size:.88rem}
-  .more-table td{padding:.6em .4em;border-bottom:1px solid var(--line);vertical-align:middle}
-  .more-table td:nth-child(2){white-space:nowrap;color:var(--sub);font-family:"Jost","Noto Sans JP",sans-serif;padding:.6em .8em}
-  .more-table td:nth-child(3){white-space:nowrap;font-weight:900;text-align:right;padding-right:1em;font-family:"Jost","Noto Sans JP",sans-serif}
-  .more-table td:last-child{white-space:nowrap;text-align:right}
-  .more-table tr:hover td{background:var(--paper-2)}
-  .more-tag{display:inline-block;font-size:.66rem;font-weight:700;color:var(--red-deep);border:1px solid var(--red);padding:.05em .4em;margin-right:.5em;vertical-align:middle}
-  .more-table a.t-link{font-size:.8rem}
+  .more-group h3{font-weight:900;font-size:1.02rem;margin-bottom:1em;padding-bottom:.4em;border-bottom:2px solid var(--ink)}
+  .more-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(96px,1fr));gap:1.4em .9em}
+  .more-card{text-decoration:none;color:inherit;text-align:center}
+  .more-card .mc-frame{
+    width:100%;aspect-ratio:1/1;background:var(--paper-2);border:1px solid var(--line);
+    display:flex;align-items:center;justify-content:center;padding:5px;margin-bottom:.5em;
+    transition:border-color .15s;overflow:hidden;position:relative;
+  }
+  .more-card:hover .mc-frame{border-color:var(--ink)}
+  .mc-frame img{width:100%;height:100%;object-fit:cover}
+  .more-tag{position:absolute;top:0;left:0;font-size:.6rem;font-weight:700;color:#fff;background:var(--red);padding:.15em .45em;letter-spacing:.02em}
+  .mc-name{display:block;font-size:.76rem;line-height:1.4;color:var(--ink)}
+  .more-card:hover .mc-name{color:var(--red-deep);text-decoration:underline}
+  .mc-price{display:block;font-size:.78rem;font-weight:900;color:var(--ink);margin-top:.25em;font-family:"Jost","Noto Sans JP",sans-serif}
 
   footer{border-top:1px solid var(--line);padding:40px 0 64px;color:var(--sub);font-size:.82rem}
   footer p{margin-bottom:.4em;max-width:48em}
@@ -673,109 +678,333 @@
 
       <div class="more-group reveal">
         <h3>コンロまわりで使う（コンロ横・コンロ奥・レンジガード用など）</h3>
-        <table class="more-table">
-          <tbody>
-            <tr><td><span class="more-tag">人気</span>下が拭けるコンロ横ラック 2段</td><td>2段</td><td>4,840円</td><td><a class="t-link" href="https://item.rakuten.co.jp/sommelier/ymj-01147/" target="_blank" rel="noopener">見る</a></td></tr>
-            <tr><td><span class="more-tag">人気</span>コンロ奥ラック 排気口カバー付 60cmコンロ用</td><td>耐荷重10kg</td><td>5,390円</td><td><a class="t-link" href="https://item.rakuten.co.jp/sommelier/ymj-00610/" target="_blank" rel="noopener">見る</a></td></tr>
-            <tr><td>クランプ式 調味料ラック W30/W60（ガラスレンジガード用）</td><td>W30/W60</td><td>2,530円〜</td><td><a class="t-link" href="https://item.rakuten.co.jp/sommelier/ymj-02010/" target="_blank" rel="noopener">見る</a></td></tr>
-            <tr><td>調味料トレー（ガラスレンジガード用）</td><td>—</td><td>1,980円</td><td><a class="t-link" href="https://item.rakuten.co.jp/sommelier/ymj-01990/" target="_blank" rel="noopener">見る</a></td></tr>
-            <tr><td>調味料ストッカーラック（ガラスレンジガード用）</td><td>—</td><td>1,980円</td><td><a class="t-link" href="https://item.rakuten.co.jp/sommelier/ymj-01995/" target="_blank" rel="noopener">見る</a></td></tr>
-            <tr><td>コンロ横調味料ラック（引き出し式）</td><td>引き出し式</td><td>6,820円</td><td><a class="t-link" href="https://item.rakuten.co.jp/sommelier/ymj-01865/" target="_blank" rel="noopener">見る</a></td></tr>
-            <tr><td>スリムスパイスラック 4段</td><td>4段</td><td>2,750円</td><td><a class="t-link" href="https://item.rakuten.co.jp/sommelier/ymj-00978/" target="_blank" rel="noopener">見る</a></td></tr>
-            <tr><td>フィルムフック キッチンコーナートレー/コーナーラック</td><td>コンロ奥</td><td>2,530円〜</td><td><a class="t-link" href="https://item.rakuten.co.jp/sommelier/ymj-01921/" target="_blank" rel="noopener">見る</a></td></tr>
-            <tr><td>棚付き伸縮排気口カバー</td><td>伸縮式</td><td>2,970円</td><td><a class="t-link" href="https://item.rakuten.co.jp/sommelier/ymj-00150/" target="_blank" rel="noopener">見る</a></td></tr>
-            <tr><td>奥行ワイド棚付き伸縮排気口カバー</td><td>伸縮式</td><td>3,850円</td><td><a class="t-link" href="https://item.rakuten.co.jp/sommelier/ymj-00571/" target="_blank" rel="noopener">見る</a></td></tr>
-            <tr><td>伸縮キッチンサポートラック</td><td>伸縮式</td><td>6,820円</td><td><a class="t-link" href="https://item.rakuten.co.jp/sommelier/tower-051/" target="_blank" rel="noopener">見る</a></td></tr>
-            <tr><td>コンロサイドラック</td><td>—</td><td>7,810円</td><td><a class="t-link" href="https://item.rakuten.co.jp/sommelier/ymj-00328/" target="_blank" rel="noopener">見る</a></td></tr>
-            <tr><td>コンロコーナーラック</td><td>コンロ奥</td><td>1,980円</td><td><a class="t-link" href="https://item.rakuten.co.jp/sommelier/ymj-00054/" target="_blank" rel="noopener">見る</a></td></tr>
-            <tr><td>コンロ奥ラック 3段</td><td>3段</td><td>11,990円</td><td><a class="t-link" href="https://item.rakuten.co.jp/sommelier/tower-030/" target="_blank" rel="noopener">見る</a></td></tr>
-          </tbody>
-        </table>
+        <div class="more-grid">
+          <a class="more-card" href="https://item.rakuten.co.jp/sommelier/ymj-01147/" target="_blank" rel="noopener">
+            <span class="mc-frame"><span class="more-tag">人気</span><img loading="lazy" src="images/ymj-01147.jpg" alt="山崎実業 tower 下が拭けるコンロ横ラック 2段"></span>
+            <span class="mc-name">下が拭けるコンロ横ラック 2段</span>
+            <span class="mc-price">4,840円</span>
+          </a>
+          <a class="more-card" href="https://item.rakuten.co.jp/sommelier/ymj-00610/" target="_blank" rel="noopener">
+            <span class="mc-frame"><span class="more-tag">人気</span><img loading="lazy" src="images/ymj-00610.jpg" alt="山崎実業 tower コンロ奥ラック 排気口カバー付 60cmコンロ用"></span>
+            <span class="mc-name">コンロ奥ラック 排気口カバー付 60cmコンロ用</span>
+            <span class="mc-price">5,390円</span>
+          </a>
+          <a class="more-card" href="https://item.rakuten.co.jp/sommelier/ymj-02010/" target="_blank" rel="noopener">
+            <span class="mc-frame"><img loading="lazy" src="images/more/ymj-02010.jpg" alt="山崎実業 tower クランプ式 調味料ラック W30/W60（ガラスレンジガード用）"></span>
+            <span class="mc-name">クランプ式 調味料ラック W30/W60（ガラスレンジガード用）</span>
+            <span class="mc-price">2,530円〜</span>
+          </a>
+          <a class="more-card" href="https://item.rakuten.co.jp/sommelier/ymj-01990/" target="_blank" rel="noopener">
+            <span class="mc-frame"><img loading="lazy" src="images/more/ymj-01990.jpg" alt="山崎実業 tower 調味料トレー（ガラスレンジガード用）"></span>
+            <span class="mc-name">調味料トレー（ガラスレンジガード用）</span>
+            <span class="mc-price">1,980円</span>
+          </a>
+          <a class="more-card" href="https://item.rakuten.co.jp/sommelier/ymj-01995/" target="_blank" rel="noopener">
+            <span class="mc-frame"><img loading="lazy" src="images/more/ymj-01995.jpg" alt="山崎実業 tower 調味料ストッカーラック（ガラスレンジガード用）"></span>
+            <span class="mc-name">調味料ストッカーラック（ガラスレンジガード用）</span>
+            <span class="mc-price">1,980円</span>
+          </a>
+          <a class="more-card" href="https://item.rakuten.co.jp/sommelier/ymj-01865/" target="_blank" rel="noopener">
+            <span class="mc-frame"><img loading="lazy" src="images/more/ymj-01865.jpg" alt="山崎実業 tower コンロ横調味料ラック（引き出し式）"></span>
+            <span class="mc-name">コンロ横調味料ラック（引き出し式）</span>
+            <span class="mc-price">6,820円</span>
+          </a>
+          <a class="more-card" href="https://item.rakuten.co.jp/sommelier/ymj-00978/" target="_blank" rel="noopener">
+            <span class="mc-frame"><img loading="lazy" src="images/more/ymj-00978.jpg" alt="山崎実業 tower スリムスパイスラック 4段"></span>
+            <span class="mc-name">スリムスパイスラック 4段</span>
+            <span class="mc-price">2,750円</span>
+          </a>
+          <a class="more-card" href="https://item.rakuten.co.jp/sommelier/ymj-01921/" target="_blank" rel="noopener">
+            <span class="mc-frame"><img loading="lazy" src="images/more/ymj-01921.jpg" alt="山崎実業 tower フィルムフック キッチンコーナートレー/コーナーラック"></span>
+            <span class="mc-name">フィルムフック キッチンコーナートレー/コーナーラック</span>
+            <span class="mc-price">2,530円〜</span>
+          </a>
+          <a class="more-card" href="https://item.rakuten.co.jp/sommelier/ymj-00150/" target="_blank" rel="noopener">
+            <span class="mc-frame"><img loading="lazy" src="images/more/ymj-00150.jpg" alt="山崎実業 tower 棚付き伸縮排気口カバー"></span>
+            <span class="mc-name">棚付き伸縮排気口カバー</span>
+            <span class="mc-price">2,970円</span>
+          </a>
+          <a class="more-card" href="https://item.rakuten.co.jp/sommelier/ymj-00571/" target="_blank" rel="noopener">
+            <span class="mc-frame"><img loading="lazy" src="images/more/ymj-00571.jpg" alt="山崎実業 tower 奥行ワイド棚付き伸縮排気口カバー"></span>
+            <span class="mc-name">奥行ワイド棚付き伸縮排気口カバー</span>
+            <span class="mc-price">3,850円</span>
+          </a>
+          <a class="more-card" href="https://item.rakuten.co.jp/sommelier/tower-051/" target="_blank" rel="noopener">
+            <span class="mc-frame"><img loading="lazy" src="images/more/tower-051.jpg" alt="山崎実業 tower 伸縮キッチンサポートラック"></span>
+            <span class="mc-name">伸縮キッチンサポートラック</span>
+            <span class="mc-price">6,820円</span>
+          </a>
+          <a class="more-card" href="https://item.rakuten.co.jp/sommelier/ymj-00328/" target="_blank" rel="noopener">
+            <span class="mc-frame"><img loading="lazy" src="images/more/ymj-00328.jpg" alt="山崎実業 tower コンロサイドラック"></span>
+            <span class="mc-name">コンロサイドラック</span>
+            <span class="mc-price">7,810円</span>
+          </a>
+          <a class="more-card" href="https://item.rakuten.co.jp/sommelier/ymj-00054/" target="_blank" rel="noopener">
+            <span class="mc-frame"><img loading="lazy" src="images/more/ymj-00054.jpg" alt="山崎実業 tower コンロコーナーラック"></span>
+            <span class="mc-name">コンロコーナーラック</span>
+            <span class="mc-price">1,980円</span>
+          </a>
+          <a class="more-card" href="https://item.rakuten.co.jp/sommelier/tower-030/" target="_blank" rel="noopener">
+            <span class="mc-frame"><img loading="lazy" src="images/more/tower-030.jpg" alt="山崎実業 tower コンロ奥ラック 3段"></span>
+            <span class="mc-name">コンロ奥ラック 3段</span>
+            <span class="mc-price">11,990円</span>
+          </a>
+        </div>
       </div>
 
       <div class="more-group reveal">
         <h3>戸棚下・レンジフードから吊るす</h3>
-        <table class="more-table">
-          <tbody>
-            <tr><td><span class="more-tag">人気</span>レンジフード調味料ラック 3段</td><td>3段</td><td>4,950円</td><td><a class="t-link" href="https://item.rakuten.co.jp/sommelier/ymj-00317/" target="_blank" rel="noopener">見る</a></td></tr>
-            <tr><td><span class="more-tag">人気</span>戸棚下調味料ラック</td><td>—</td><td>2,860円</td><td><a class="t-link" href="https://item.rakuten.co.jp/sommelier/ymj-00030/" target="_blank" rel="noopener">見る</a></td></tr>
-            <tr><td>レンジフードスチールパネル</td><td>吊り下げ</td><td>4,510円</td><td><a class="t-link" href="https://item.rakuten.co.jp/sommelier/ymj-01437/" target="_blank" rel="noopener">見る</a></td></tr>
-            <tr><td>レンジフード横スパイスラック</td><td>—</td><td>1,980円</td><td><a class="t-link" href="https://item.rakuten.co.jp/sommelier/ymj-01242/" target="_blank" rel="noopener">見る</a></td></tr>
-          </tbody>
-        </table>
+        <div class="more-grid">
+          <a class="more-card" href="https://item.rakuten.co.jp/sommelier/ymj-00317/" target="_blank" rel="noopener">
+            <span class="mc-frame"><span class="more-tag">人気</span><img loading="lazy" src="images/ymj-00317.jpg" alt="山崎実業 tower レンジフード調味料ラック 3段"></span>
+            <span class="mc-name">レンジフード調味料ラック 3段</span>
+            <span class="mc-price">4,950円</span>
+          </a>
+          <a class="more-card" href="https://item.rakuten.co.jp/sommelier/ymj-00030/" target="_blank" rel="noopener">
+            <span class="mc-frame"><span class="more-tag">人気</span><img loading="lazy" src="images/ymj-00030.jpg" alt="山崎実業 tower 戸棚下調味料ラック"></span>
+            <span class="mc-name">戸棚下調味料ラック</span>
+            <span class="mc-price">2,860円</span>
+          </a>
+          <a class="more-card" href="https://item.rakuten.co.jp/sommelier/ymj-01437/" target="_blank" rel="noopener">
+            <span class="mc-frame"><img loading="lazy" src="images/more/ymj-01437.jpg" alt="山崎実業 tower レンジフードスチールパネル"></span>
+            <span class="mc-name">レンジフードスチールパネル</span>
+            <span class="mc-price">4,510円</span>
+          </a>
+          <a class="more-card" href="https://item.rakuten.co.jp/sommelier/ymj-01242/" target="_blank" rel="noopener">
+            <span class="mc-frame"><img loading="lazy" src="images/more/ymj-01242.jpg" alt="山崎実業 tower レンジフード横スパイスラック"></span>
+            <span class="mc-name">レンジフード横スパイスラック</span>
+            <span class="mc-price">1,980円</span>
+          </a>
+        </div>
       </div>
 
       <div class="more-group reveal">
         <h3>シンク下・引き出しの中で使う</h3>
-        <table class="more-table">
-          <tbody>
-            <tr><td><span class="more-tag">人気</span>シンク下伸縮キッチンラック スリム</td><td>伸縮式</td><td>3,960円</td><td><a class="t-link" href="https://item.rakuten.co.jp/sommelier/ymj-00278/" target="_blank" rel="noopener">見る</a></td></tr>
-            <tr><td><span class="more-tag">人気</span>スパイス収納ラック（コンロ横引き出し用）</td><td>引き出し用</td><td>2,530円</td><td><a class="t-link" href="https://item.rakuten.co.jp/sommelier/ymj-01929/" target="_blank" rel="noopener">見る</a></td></tr>
-            <tr><td>シンク下収納バスケット 2段</td><td>2段</td><td>6,820円</td><td><a class="t-link" href="https://item.rakuten.co.jp/sommelier/ymj-01062/" target="_blank" rel="noopener">見る</a></td></tr>
-            <tr><td>伸縮収納棚</td><td>伸縮式</td><td>3,960円</td><td><a class="t-link" href="https://item.rakuten.co.jp/sommelier/ymj-00189/" target="_blank" rel="noopener">見る</a></td></tr>
-            <tr><td>折り畳み積み重ね棚 L</td><td>積み重ね式</td><td>2,970円</td><td><a class="t-link" href="https://item.rakuten.co.jp/sommelier/ymj-01487/" target="_blank" rel="noopener">見る</a></td></tr>
-            <tr><td>折り畳み積み重ね棚 M</td><td>積み重ね式</td><td>2,750円</td><td><a class="t-link" href="https://item.rakuten.co.jp/sommelier/ymj-01486/" target="_blank" rel="noopener">見る</a></td></tr>
-            <tr><td>シンク下ボトルストッカー 4段</td><td>4段</td><td>3,520円</td><td><a class="t-link" href="https://item.rakuten.co.jp/sommelier/ymj-00250/" target="_blank" rel="noopener">見る</a></td></tr>
-            <tr><td>シンク下仕切り付きワイドラック</td><td>仕切り付き</td><td>3,520円</td><td><a class="t-link" href="https://item.rakuten.co.jp/sommelier/ymj-00377/" target="_blank" rel="noopener">見る</a></td></tr>
-          </tbody>
-        </table>
+        <div class="more-grid">
+          <a class="more-card" href="https://item.rakuten.co.jp/sommelier/ymj-00278/" target="_blank" rel="noopener">
+            <span class="mc-frame"><span class="more-tag">人気</span><img loading="lazy" src="images/ymj-00278.jpg" alt="山崎実業 tower シンク下伸縮キッチンラック スリム"></span>
+            <span class="mc-name">シンク下伸縮キッチンラック スリム</span>
+            <span class="mc-price">3,960円</span>
+          </a>
+          <a class="more-card" href="https://item.rakuten.co.jp/sommelier/ymj-01929/" target="_blank" rel="noopener">
+            <span class="mc-frame"><span class="more-tag">人気</span><img loading="lazy" src="images/ymj-01929.jpg" alt="山崎実業 tower スパイス収納ラック（コンロ横引き出し用）"></span>
+            <span class="mc-name">スパイス収納ラック（コンロ横引き出し用）</span>
+            <span class="mc-price">2,530円</span>
+          </a>
+          <a class="more-card" href="https://item.rakuten.co.jp/sommelier/ymj-01062/" target="_blank" rel="noopener">
+            <span class="mc-frame"><img loading="lazy" src="images/more/ymj-01062.jpg" alt="山崎実業 tower シンク下収納バスケット 2段"></span>
+            <span class="mc-name">シンク下収納バスケット 2段</span>
+            <span class="mc-price">6,820円</span>
+          </a>
+          <a class="more-card" href="https://item.rakuten.co.jp/sommelier/ymj-00189/" target="_blank" rel="noopener">
+            <span class="mc-frame"><img loading="lazy" src="images/more/ymj-00189.jpg" alt="山崎実業 tower 伸縮収納棚"></span>
+            <span class="mc-name">伸縮収納棚</span>
+            <span class="mc-price">3,960円</span>
+          </a>
+          <a class="more-card" href="https://item.rakuten.co.jp/sommelier/ymj-01487/" target="_blank" rel="noopener">
+            <span class="mc-frame"><img loading="lazy" src="images/more/ymj-01487.jpg" alt="山崎実業 tower 折り畳み積み重ね棚 L"></span>
+            <span class="mc-name">折り畳み積み重ね棚 L</span>
+            <span class="mc-price">2,970円</span>
+          </a>
+          <a class="more-card" href="https://item.rakuten.co.jp/sommelier/ymj-01486/" target="_blank" rel="noopener">
+            <span class="mc-frame"><img loading="lazy" src="images/more/ymj-01486.jpg" alt="山崎実業 tower 折り畳み積み重ね棚 M"></span>
+            <span class="mc-name">折り畳み積み重ね棚 M</span>
+            <span class="mc-price">2,750円</span>
+          </a>
+          <a class="more-card" href="https://item.rakuten.co.jp/sommelier/ymj-00250/" target="_blank" rel="noopener">
+            <span class="mc-frame"><img loading="lazy" src="images/more/ymj-00250.jpg" alt="山崎実業 tower シンク下ボトルストッカー 4段"></span>
+            <span class="mc-name">シンク下ボトルストッカー 4段</span>
+            <span class="mc-price">3,520円</span>
+          </a>
+          <a class="more-card" href="https://item.rakuten.co.jp/sommelier/ymj-00377/" target="_blank" rel="noopener">
+            <span class="mc-frame"><img loading="lazy" src="images/more/ymj-00377.jpg" alt="山崎実業 tower シンク下仕切り付きワイドラック"></span>
+            <span class="mc-name">シンク下仕切り付きワイドラック</span>
+            <span class="mc-price">3,520円</span>
+          </a>
+        </div>
       </div>
 
       <div class="more-group reveal">
         <h3>マグネット・冷蔵庫横につける</h3>
-        <table class="more-table">
-          <tbody>
-            <tr><td><span class="more-tag">人気</span>マグネットキッチン棚 ワイド</td><td>幅50cm</td><td>3,410円</td><td><a class="t-link" href="https://item.rakuten.co.jp/sommelier/ymj-00346/" target="_blank" rel="noopener">見る</a></td></tr>
-            <tr><td>マグネットキッチン棚 S</td><td>幅30cm</td><td>1,650円</td><td><a class="t-link" href="https://item.rakuten.co.jp/sommelier/ymj-01571/" target="_blank" rel="noopener">見る</a></td></tr>
-            <tr><td>マグネットラック ワイド</td><td>マグネット</td><td>1,980円</td><td><a class="t-link" href="https://item.rakuten.co.jp/sommelier/ymj-00438/" target="_blank" rel="noopener">見る</a></td></tr>
-            <tr><td>マグネット調味料ストッカーラック</td><td>マグネット</td><td>1,650円</td><td><a class="t-link" href="https://item.rakuten.co.jp/sommelier/ymj-00439/" target="_blank" rel="noopener">見る</a></td></tr>
-            <tr><td>マグネットスパイスラック</td><td>マグネット</td><td>2,750円</td><td><a class="t-link" href="https://item.rakuten.co.jp/sommelier/ymj-00039/" target="_blank" rel="noopener">見る</a></td></tr>
-            <tr><td>マグネットストレージラック</td><td>マグネット</td><td>1,320円</td><td><a class="t-link" href="https://item.rakuten.co.jp/sommelier/ymj-00321/" target="_blank" rel="noopener">見る</a></td></tr>
-            <tr><td>マグネットストレージボックス ワイド</td><td>マグネット</td><td>1,980円</td><td><a class="t-link" href="https://item.rakuten.co.jp/sommelier/ymj-00320/" target="_blank" rel="noopener">見る</a></td></tr>
-            <tr><td>マグネットプラスチックバッグケース トレー付き</td><td>マグネット</td><td>2,970円</td><td><a class="t-link" href="https://item.rakuten.co.jp/sommelier/ymj-01926/" target="_blank" rel="noopener">見る</a></td></tr>
-            <tr><td>マグネットスパイスボトル 3個セット</td><td>マグネット</td><td>1,815円</td><td><a class="t-link" href="https://item.rakuten.co.jp/sommelier/ymj-00779/" target="_blank" rel="noopener">見る</a></td></tr>
-            <tr><td>フィルムフックスパイスラック</td><td>フィルムフック</td><td>2,750円</td><td><a class="t-link" href="https://item.rakuten.co.jp/sommelier/ymj-01181/" target="_blank" rel="noopener">見る</a></td></tr>
-            <tr><td>フィルムフックキッチン棚 ワイド</td><td>幅50cm</td><td>3,960円</td><td><a class="t-link" href="https://item.rakuten.co.jp/sommelier/ymj-01714/" target="_blank" rel="noopener">見る</a></td></tr>
-            <tr><td>冷蔵庫中回転式トレー スクエア</td><td>冷蔵庫内</td><td>1,980円</td><td><a class="t-link" href="https://item.rakuten.co.jp/sommelier/ymj-01467/" target="_blank" rel="noopener">見る</a></td></tr>
-            <tr><td>冷蔵庫中回転式仕切り付きトレー スクエア</td><td>冷蔵庫内</td><td>1,980円</td><td><a class="t-link" href="https://item.rakuten.co.jp/sommelier/ymj-01468/" target="_blank" rel="noopener">見る</a></td></tr>
-            <tr><td>冷蔵庫中スリム調味料収納ラック</td><td>冷蔵庫内</td><td>1,650円</td><td><a class="t-link" href="https://item.rakuten.co.jp/sommelier/ymj-00977/" target="_blank" rel="noopener">見る</a></td></tr>
-            <tr><td>ウォーターサーバー横マグネットラック 2段</td><td>2段</td><td>3,520円</td><td><a class="t-link" href="https://item.rakuten.co.jp/sommelier/ymj-00990/" target="_blank" rel="noopener">見る</a></td></tr>
-          </tbody>
-        </table>
+        <div class="more-grid">
+          <a class="more-card" href="https://item.rakuten.co.jp/sommelier/ymj-00346/" target="_blank" rel="noopener">
+            <span class="mc-frame"><span class="more-tag">人気</span><img loading="lazy" src="images/ymj-00346.jpg" alt="山崎実業 tower マグネットキッチン棚 ワイド"></span>
+            <span class="mc-name">マグネットキッチン棚 ワイド</span>
+            <span class="mc-price">3,410円</span>
+          </a>
+          <a class="more-card" href="https://item.rakuten.co.jp/sommelier/ymj-01571/" target="_blank" rel="noopener">
+            <span class="mc-frame"><img loading="lazy" src="images/more/ymj-01571.jpg" alt="山崎実業 tower マグネットキッチン棚 S"></span>
+            <span class="mc-name">マグネットキッチン棚 S</span>
+            <span class="mc-price">1,650円</span>
+          </a>
+          <a class="more-card" href="https://item.rakuten.co.jp/sommelier/ymj-00438/" target="_blank" rel="noopener">
+            <span class="mc-frame"><img loading="lazy" src="images/more/ymj-00438.jpg" alt="山崎実業 tower マグネットラック ワイド"></span>
+            <span class="mc-name">マグネットラック ワイド</span>
+            <span class="mc-price">1,980円</span>
+          </a>
+          <a class="more-card" href="https://item.rakuten.co.jp/sommelier/ymj-00439/" target="_blank" rel="noopener">
+            <span class="mc-frame"><img loading="lazy" src="images/more/ymj-00439.jpg" alt="山崎実業 tower マグネット調味料ストッカーラック"></span>
+            <span class="mc-name">マグネット調味料ストッカーラック</span>
+            <span class="mc-price">1,650円</span>
+          </a>
+          <a class="more-card" href="https://item.rakuten.co.jp/sommelier/ymj-00039/" target="_blank" rel="noopener">
+            <span class="mc-frame"><img loading="lazy" src="images/more/ymj-00039.jpg" alt="山崎実業 tower マグネットスパイスラック"></span>
+            <span class="mc-name">マグネットスパイスラック</span>
+            <span class="mc-price">2,750円</span>
+          </a>
+          <a class="more-card" href="https://item.rakuten.co.jp/sommelier/ymj-00321/" target="_blank" rel="noopener">
+            <span class="mc-frame"><img loading="lazy" src="images/more/ymj-00321.jpg" alt="山崎実業 tower マグネットストレージラック"></span>
+            <span class="mc-name">マグネットストレージラック</span>
+            <span class="mc-price">1,320円</span>
+          </a>
+          <a class="more-card" href="https://item.rakuten.co.jp/sommelier/ymj-00320/" target="_blank" rel="noopener">
+            <span class="mc-frame"><img loading="lazy" src="images/more/ymj-00320.jpg" alt="山崎実業 tower マグネットストレージボックス ワイド"></span>
+            <span class="mc-name">マグネットストレージボックス ワイド</span>
+            <span class="mc-price">1,980円</span>
+          </a>
+          <a class="more-card" href="https://item.rakuten.co.jp/sommelier/ymj-01926/" target="_blank" rel="noopener">
+            <span class="mc-frame"><img loading="lazy" src="images/more/ymj-01926.jpg" alt="山崎実業 tower マグネットプラスチックバッグケース トレー付き"></span>
+            <span class="mc-name">マグネットプラスチックバッグケース トレー付き</span>
+            <span class="mc-price">2,970円</span>
+          </a>
+          <a class="more-card" href="https://item.rakuten.co.jp/sommelier/ymj-00779/" target="_blank" rel="noopener">
+            <span class="mc-frame"><img loading="lazy" src="images/more/ymj-00779.jpg" alt="山崎実業 tower マグネットスパイスボトル 3個セット"></span>
+            <span class="mc-name">マグネットスパイスボトル 3個セット</span>
+            <span class="mc-price">1,815円</span>
+          </a>
+          <a class="more-card" href="https://item.rakuten.co.jp/sommelier/ymj-01181/" target="_blank" rel="noopener">
+            <span class="mc-frame"><img loading="lazy" src="images/more/ymj-01181.jpg" alt="山崎実業 tower フィルムフックスパイスラック"></span>
+            <span class="mc-name">フィルムフックスパイスラック</span>
+            <span class="mc-price">2,750円</span>
+          </a>
+          <a class="more-card" href="https://item.rakuten.co.jp/sommelier/ymj-01714/" target="_blank" rel="noopener">
+            <span class="mc-frame"><img loading="lazy" src="images/more/ymj-01714.jpg" alt="山崎実業 tower フィルムフックキッチン棚 ワイド"></span>
+            <span class="mc-name">フィルムフックキッチン棚 ワイド</span>
+            <span class="mc-price">3,960円</span>
+          </a>
+          <a class="more-card" href="https://item.rakuten.co.jp/sommelier/ymj-01467/" target="_blank" rel="noopener">
+            <span class="mc-frame"><img loading="lazy" src="images/more/ymj-01467.jpg" alt="山崎実業 tower 冷蔵庫中回転式トレー スクエア"></span>
+            <span class="mc-name">冷蔵庫中回転式トレー スクエア</span>
+            <span class="mc-price">1,980円</span>
+          </a>
+          <a class="more-card" href="https://item.rakuten.co.jp/sommelier/ymj-01468/" target="_blank" rel="noopener">
+            <span class="mc-frame"><img loading="lazy" src="images/more/ymj-01468.jpg" alt="山崎実業 tower 冷蔵庫中回転式仕切り付きトレー スクエア"></span>
+            <span class="mc-name">冷蔵庫中回転式仕切り付きトレー スクエア</span>
+            <span class="mc-price">1,980円</span>
+          </a>
+          <a class="more-card" href="https://item.rakuten.co.jp/sommelier/ymj-00977/" target="_blank" rel="noopener">
+            <span class="mc-frame"><img loading="lazy" src="images/more/ymj-00977.jpg" alt="山崎実業 tower 冷蔵庫中スリム調味料収納ラック"></span>
+            <span class="mc-name">冷蔵庫中スリム調味料収納ラック</span>
+            <span class="mc-price">1,650円</span>
+          </a>
+          <a class="more-card" href="https://item.rakuten.co.jp/sommelier/ymj-00990/" target="_blank" rel="noopener">
+            <span class="mc-frame"><img loading="lazy" src="images/more/ymj-00990.jpg" alt="山崎実業 tower ウォーターサーバー横マグネットラック 2段"></span>
+            <span class="mc-name">ウォーターサーバー横マグネットラック 2段</span>
+            <span class="mc-price">3,520円</span>
+          </a>
+        </div>
       </div>
 
       <div class="more-group reveal">
         <h3>隠す・回転・伸縮・ワゴンタイプ（据え置き）</h3>
-        <table class="more-table">
-          <tbody>
-            <tr><td><span class="more-tag">人気</span>回転式収納ラック スクエア</td><td>回転式</td><td>1,980円</td><td><a class="t-link" href="https://item.rakuten.co.jp/sommelier/ymj-01201/" target="_blank" rel="noopener">見る</a></td></tr>
-            <tr><td><span class="more-tag">人気</span>伸縮収納ラック 2段</td><td>伸縮式</td><td>3,850円</td><td><a class="t-link" href="https://item.rakuten.co.jp/sommelier/ymj-00596/" target="_blank" rel="noopener">見る</a></td></tr>
-            <tr><td>キッチンスタンド</td><td>2段</td><td>2,970円</td><td><a class="t-link" href="https://item.rakuten.co.jp/sommelier/ymj-00479/" target="_blank" rel="noopener">見る</a></td></tr>
-            <tr><td>隠せる引き出し収納</td><td>2段</td><td>9,900円</td><td><a class="t-link" href="https://item.rakuten.co.jp/sommelier/ymj-01393/" target="_blank" rel="noopener">見る</a></td></tr>
-            <tr><td>前が開くキッチンカウンター上収納ラック D15</td><td>前開き</td><td>8,910円</td><td><a class="t-link" href="https://item.rakuten.co.jp/sommelier/ymj-01401/" target="_blank" rel="noopener">見る</a></td></tr>
-            <tr><td>ハンドル付きスリムワゴン</td><td>15cm未満</td><td>12,650円</td><td><a class="t-link" href="https://item.rakuten.co.jp/sommelier/tower-035/" target="_blank" rel="noopener">見る</a></td></tr>
-            <tr><td>スリムキッチンワゴン</td><td>キャスター付き</td><td>6,820円</td><td><a class="t-link" href="https://item.rakuten.co.jp/sommelier/ymj-00502/" target="_blank" rel="noopener">見る</a></td></tr>
-            <tr><td>キャスター付きスリムワゴン 3段</td><td>3段</td><td>11,000円</td><td><a class="t-link" href="https://item.rakuten.co.jp/sommelier/ymj-01245/" target="_blank" rel="noopener">見る</a></td></tr>
-            <tr><td>キャスター付きスリムワゴン 4段</td><td>4段</td><td>13,750円</td><td><a class="t-link" href="https://item.rakuten.co.jp/sommelier/ymj-01246/" target="_blank" rel="noopener">見る</a></td></tr>
-          </tbody>
-        </table>
+        <div class="more-grid">
+          <a class="more-card" href="https://item.rakuten.co.jp/sommelier/ymj-01201/" target="_blank" rel="noopener">
+            <span class="mc-frame"><span class="more-tag">人気</span><img loading="lazy" src="images/ymj-01201.jpg" alt="山崎実業 tower 回転式収納ラック スクエア"></span>
+            <span class="mc-name">回転式収納ラック スクエア</span>
+            <span class="mc-price">1,980円</span>
+          </a>
+          <a class="more-card" href="https://item.rakuten.co.jp/sommelier/ymj-00596/" target="_blank" rel="noopener">
+            <span class="mc-frame"><span class="more-tag">人気</span><img loading="lazy" src="images/ymj-00596.jpg" alt="山崎実業 tower 伸縮収納ラック 2段"></span>
+            <span class="mc-name">伸縮収納ラック 2段</span>
+            <span class="mc-price">3,850円</span>
+          </a>
+          <a class="more-card" href="https://item.rakuten.co.jp/sommelier/ymj-00479/" target="_blank" rel="noopener">
+            <span class="mc-frame"><img loading="lazy" src="images/more/ymj-00479.jpg" alt="山崎実業 tower キッチンスタンド"></span>
+            <span class="mc-name">キッチンスタンド</span>
+            <span class="mc-price">2,970円</span>
+          </a>
+          <a class="more-card" href="https://item.rakuten.co.jp/sommelier/ymj-01393/" target="_blank" rel="noopener">
+            <span class="mc-frame"><img loading="lazy" src="images/more/ymj-01393.jpg" alt="山崎実業 tower 隠せる引き出し収納"></span>
+            <span class="mc-name">隠せる引き出し収納</span>
+            <span class="mc-price">9,900円</span>
+          </a>
+          <a class="more-card" href="https://item.rakuten.co.jp/sommelier/ymj-01401/" target="_blank" rel="noopener">
+            <span class="mc-frame"><img loading="lazy" src="images/more/ymj-01401.jpg" alt="山崎実業 tower 前が開くキッチンカウンター上収納ラック D15"></span>
+            <span class="mc-name">前が開くキッチンカウンター上収納ラック D15</span>
+            <span class="mc-price">8,910円</span>
+          </a>
+          <a class="more-card" href="https://item.rakuten.co.jp/sommelier/tower-035/" target="_blank" rel="noopener">
+            <span class="mc-frame"><img loading="lazy" src="images/more/tower-035.jpg" alt="山崎実業 tower ハンドル付きスリムワゴン"></span>
+            <span class="mc-name">ハンドル付きスリムワゴン</span>
+            <span class="mc-price">12,650円</span>
+          </a>
+          <a class="more-card" href="https://item.rakuten.co.jp/sommelier/ymj-00502/" target="_blank" rel="noopener">
+            <span class="mc-frame"><img loading="lazy" src="images/more/ymj-00502.jpg" alt="山崎実業 tower スリムキッチンワゴン"></span>
+            <span class="mc-name">スリムキッチンワゴン</span>
+            <span class="mc-price">6,820円</span>
+          </a>
+          <a class="more-card" href="https://item.rakuten.co.jp/sommelier/ymj-01245/" target="_blank" rel="noopener">
+            <span class="mc-frame"><img loading="lazy" src="images/more/ymj-01245.jpg" alt="山崎実業 tower キャスター付きスリムワゴン 3段"></span>
+            <span class="mc-name">キャスター付きスリムワゴン 3段</span>
+            <span class="mc-price">11,000円</span>
+          </a>
+          <a class="more-card" href="https://item.rakuten.co.jp/sommelier/ymj-01246/" target="_blank" rel="noopener">
+            <span class="mc-frame"><img loading="lazy" src="images/more/ymj-01246.jpg" alt="山崎実業 tower キャスター付きスリムワゴン 4段"></span>
+            <span class="mc-name">キャスター付きスリムワゴン 4段</span>
+            <span class="mc-price">13,750円</span>
+          </a>
+        </div>
       </div>
 
       <div class="more-group reveal">
         <h3>スパイスボトル・ストッカー・その他</h3>
-        <table class="more-table">
-          <tbody>
-            <tr><td><span class="more-tag">人気</span>スパイスボトル L</td><td>単品</td><td>1,210円〜</td><td><a class="t-link" href="https://item.rakuten.co.jp/sommelier/ymj-00899/" target="_blank" rel="noopener">見る</a></td></tr>
-            <tr><td>スパイスボトル L 3個セット</td><td>3個セット</td><td>1,980円</td><td><a class="t-link" href="https://item.rakuten.co.jp/sommelier/ymj-01129/" target="_blank" rel="noopener">見る</a></td></tr>
-            <tr><td>調味料ストッカーラック ワイド</td><td>ワイド</td><td>2,750円</td><td><a class="t-link" href="https://item.rakuten.co.jp/sommelier/ymj-00123/" target="_blank" rel="noopener">見る</a></td></tr>
-            <tr><td>調味料ストッカー2個＆ラック3段セット スリム</td><td>3段セット</td><td>3,960円</td><td><a class="t-link" href="https://item.rakuten.co.jp/sommelier/ymj-00171/" target="_blank" rel="noopener">見る</a></td></tr>
-            <tr><td>調味料ストッカー＆ラック 2個セット</td><td>2個セット</td><td>3,960円</td><td><a class="t-link" href="https://item.rakuten.co.jp/sommelier/ymj-00135/" target="_blank" rel="noopener">見る</a></td></tr>
-            <tr><td>詰め替え用調味料ボトル</td><td>単品</td><td>1,485円</td><td><a class="t-link" href="https://item.rakuten.co.jp/sommelier/ymj-00319/" target="_blank" rel="noopener">見る</a></td></tr>
-            <tr><td>詰め替え用調味料ボトル 2個セット</td><td>2個セット</td><td>2,970円</td><td><a class="t-link" href="https://item.rakuten.co.jp/sommelier/ymj-00806/" target="_blank" rel="noopener">見る</a></td></tr>
-            <tr><td>ミル収納ホルダー シングル/ダブル</td><td>ミル用</td><td>1,100円〜</td><td><a class="t-link" href="https://item.rakuten.co.jp/sommelier/ymj-01958/" target="_blank" rel="noopener">見る</a></td></tr>
-            <tr><td>テーブル横メニュー&調味料スタンド</td><td>クランプ式</td><td>5,500円</td><td><a class="t-link" href="https://item.rakuten.co.jp/sommelier/ymj-01833/" target="_blank" rel="noopener">見る</a></td></tr>
-          </tbody>
-        </table>
+        <div class="more-grid">
+          <a class="more-card" href="https://item.rakuten.co.jp/sommelier/ymj-00899/" target="_blank" rel="noopener">
+            <span class="mc-frame"><span class="more-tag">人気</span><img loading="lazy" src="images/ymj-00899.jpg" alt="山崎実業 tower スパイスボトル L"></span>
+            <span class="mc-name">スパイスボトル L</span>
+            <span class="mc-price">1,210円〜</span>
+          </a>
+          <a class="more-card" href="https://item.rakuten.co.jp/sommelier/ymj-01129/" target="_blank" rel="noopener">
+            <span class="mc-frame"><img loading="lazy" src="images/more/ymj-01129.jpg" alt="山崎実業 tower スパイスボトル L 3個セット"></span>
+            <span class="mc-name">スパイスボトル L 3個セット</span>
+            <span class="mc-price">1,980円</span>
+          </a>
+          <a class="more-card" href="https://item.rakuten.co.jp/sommelier/ymj-00123/" target="_blank" rel="noopener">
+            <span class="mc-frame"><img loading="lazy" src="images/more/ymj-00123.jpg" alt="山崎実業 tower 調味料ストッカーラック ワイド"></span>
+            <span class="mc-name">調味料ストッカーラック ワイド</span>
+            <span class="mc-price">2,750円</span>
+          </a>
+          <a class="more-card" href="https://item.rakuten.co.jp/sommelier/ymj-00171/" target="_blank" rel="noopener">
+            <span class="mc-frame"><img loading="lazy" src="images/more/ymj-00171.jpg" alt="山崎実業 tower 調味料ストッカー2個＆ラック3段セット スリム"></span>
+            <span class="mc-name">調味料ストッカー2個＆ラック3段セット スリム</span>
+            <span class="mc-price">3,960円</span>
+          </a>
+          <a class="more-card" href="https://item.rakuten.co.jp/sommelier/ymj-00135/" target="_blank" rel="noopener">
+            <span class="mc-frame"><img loading="lazy" src="images/more/ymj-00135.jpg" alt="山崎実業 tower 調味料ストッカー＆ラック 2個セット"></span>
+            <span class="mc-name">調味料ストッカー＆ラック 2個セット</span>
+            <span class="mc-price">3,960円</span>
+          </a>
+          <a class="more-card" href="https://item.rakuten.co.jp/sommelier/ymj-00319/" target="_blank" rel="noopener">
+            <span class="mc-frame"><img loading="lazy" src="images/more/ymj-00319.jpg" alt="山崎実業 tower 詰め替え用調味料ボトル"></span>
+            <span class="mc-name">詰め替え用調味料ボトル</span>
+            <span class="mc-price">1,485円</span>
+          </a>
+          <a class="more-card" href="https://item.rakuten.co.jp/sommelier/ymj-00806/" target="_blank" rel="noopener">
+            <span class="mc-frame"><img loading="lazy" src="images/more/ymj-00806.jpg" alt="山崎実業 tower 詰め替え用調味料ボトル 2個セット"></span>
+            <span class="mc-name">詰め替え用調味料ボトル 2個セット</span>
+            <span class="mc-price">2,970円</span>
+          </a>
+          <a class="more-card" href="https://item.rakuten.co.jp/sommelier/ymj-01958/" target="_blank" rel="noopener">
+            <span class="mc-frame"><img loading="lazy" src="images/more/ymj-01958.jpg" alt="山崎実業 tower ミル収納ホルダー シングル/ダブル"></span>
+            <span class="mc-name">ミル収納ホルダー シングル/ダブル</span>
+            <span class="mc-price">1,100円〜</span>
+          </a>
+          <a class="more-card" href="https://item.rakuten.co.jp/sommelier/ymj-01833/" target="_blank" rel="noopener">
+            <span class="mc-frame"><img loading="lazy" src="images/more/ymj-01833.jpg" alt="山崎実業 tower テーブル横メニュー&amp;調味料スタンド"></span>
+            <span class="mc-name">テーブル横メニュー&amp;調味料スタンド</span>
+            <span class="mc-price">5,500円</span>
+          </a>
+        </div>
       </div>
 
       <p class="table-hint">価格は2026年9月時点の各商品ページ表示にもとづきます。カラーや個数選択で価格が変わる商品もあります。最新の価格・在庫・仕様は各商品ページでご確認ください。掲載は山崎実業「tower」ブランドの商品に絞っています。パンケース・食器ラックなど調味料収納から離れる商品は掲載を省いています。</p>
